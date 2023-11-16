@@ -116,6 +116,7 @@ export class ProviderController {
 
         if (onlyInjected) {
             providerList.push(INJECTED_PROVIDER_ID);
+            providerList.push('okx');
         } else {
             if (displayInjected) {
                 providerList.push(INJECTED_PROVIDER_ID);
