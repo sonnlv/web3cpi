@@ -20,7 +20,7 @@
           Installed
         </span>
         <span v-else>
-          <a href="https://www.okx.com/web3" target="_blank">Get wallet</a>
+          <a href="https://www.gate.io/web3" target="_blank">Get wallet</a>
         </span>
       </span>
 
