@@ -133,15 +133,10 @@ export default {
         const isMobile = isIOS || isAndroid;
         if (this.name==='OKX') {
             const isOKApp = /OKApp/i.test(ua);
-            if (isOKApp) {
+            if (isMobile && !isOKApp) {
                 window.open('okx://wallet/dapp/details?dappUrl=https://dapp.cpitoken.ai/')
             } else {
-                if(isMobile){
-                    // open dapp in okx App
-                    window.open('https://okex.com/web3/connect-dapp?uri=https%3A%2F%2Fdapp.cpitoken.ai%2F')
-                } else {
-                    this.$emit('onClick')
-                }
+                this.$emit('onClick')
             }
 
         }else {
